@@ -18,3 +18,7 @@ uvicorn
 python-multipart
 
 unstructured[pdf]
+
+pytest
+pytest-asyncio
+httpx

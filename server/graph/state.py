@@ -14,6 +14,7 @@ class AgentState(TypedDict):
     # Annotated with add_messages makes this a "living" history list
     messages: Annotated[list[AnyMessage], add_messages]
     documents: List[DocumentContext]
+    fiscal_info: Optional[dict]  # e.g., {"ticker": "AAPL", "year": 2025, "period": "Q3"}
     generation: str
     retry_count: int
     is_grounded: str  # 'yes' or 'no'
